@@ -1,0 +1,45 @@
+.home{
+    height: 88vh;
+    background-image: url('../.././img/bg.jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.home-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+.home-left{
+    flex: 2;
+}
+.home-right{
+    flex: 1;
+}
+.lets-started {
+    font-size: 7rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: white
+}
+.learning-skill {
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 5rem;
+}
+.home-btn{
+    text-decoration: none;
+    font-size: 1.8rem;
+    border: 2px solid var(--primaryColor);
+    padding: 1.5rem 3.2rem;
+    color: white;
+    font-weight: 500;
+    transition: .1s;
+    margin-top: 4rem;
+}
+.home-btn:hover{
+    background-color: var(--primaryColor);
+}
