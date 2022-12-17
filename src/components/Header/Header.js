@@ -22,7 +22,7 @@ const Header = () => {
             <div className='header'>
                 <div className="header-wrapper container">
                     <div className="header-items">
-                        <p className='logo'><Link className='logo-link' to='/'>UYL .</Link></p>
+                        <p className='logo'><Link className='logo-link' to='/'>UYL <span className='dot'>.</span></Link></p>
                         <nav className='nav-link'>
                             <Link className='link' to='/' >Home</Link>
                             <Link className='link' to='/course' >Courses</Link>

@@ -48,6 +48,10 @@
     text-decoration: none;
     color: black;;
 }
+.dot{
+    color: var(--primaryColor);
+    font-size: 5rem;
+}
 .nav-link {
     font-size: 1.8rem;
     font-weight: 500;
