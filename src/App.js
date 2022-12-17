@@ -4,6 +4,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Course from './components/Course/Course';
 import Dashboard from './components/Dashboard/Dashboard';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
@@ -20,6 +21,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard> </Dashboard>}/>
           <Route path='*' element={<NotFound></NotFound>}/>
         </Routes>
+        <Footer></Footer>
     </div>
   );
 }

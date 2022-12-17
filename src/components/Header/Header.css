@@ -1,3 +1,6 @@
+.top-info{
+    
+}
 .top-bar{
     height: 40px;
     background-color: var(--primaryColor);
@@ -27,7 +30,6 @@
 .header{
     height: 80px;
     background-color: rgb(243 243 243 / 83%);
-
 }
 .container {
     width: 120rem;
