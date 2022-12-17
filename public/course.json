@@ -54,5 +54,12 @@
       "course": "Cartoon Animation",
       "price": 30,
       "img": "https://i.ytimg.com/vi/CiXFzjnxor0/maxresdefault.jpg"
+    },
+    {
+      "id": "124e16516545644641566545435541545ed5168ad",
+      "mentor": "Amelia",
+      "course": "Diet & Meal Plan",
+      "price": 10,
+      "img": "https://noahhelps.org/wp-content/uploads/2021/03/March_Meal-Prep.jpeg"
     }
 ]
