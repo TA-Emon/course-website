@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from 'react';
+
+import useCourse from '../../hooks/useCourse';
 import SingleCourse from '../SingleCourse/SingleCourse';
 import './Course.css';
 
 const Course = () => {
 
-    const [course, setCourse] = useState([]);
-    useEffect(() => {
-        fetch('course.json')
-            .then(res => res.json())
-            .then(data => setCourse(data))
-    }, []);
+    const [course] = useCourse();
 
     return (
         <div className="course">

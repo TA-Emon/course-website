@@ -2,7 +2,7 @@ import React from 'react';
 import './SingleCourse.css';
 
 const SingleCourse = (props) => {
-    console.log(props);
+
     const {img, price, mentor, course} = props.course;
     return (
         <div className='course-item'>

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+
+    const [navMobile, setNavMobile] = useState(false);
+
+    const handelNav = () => {
+        setNavMobile(!navMobile);
+    }
+
     return (
         <div className="top-info">
             <div className="top-bar">
@@ -23,13 +30,16 @@ const Header = () => {
                 <div className="header-wrapper container">
                     <div className="header-items">
                         <p className='logo'><Link className='logo-link' to='/'>UYL <span className='dot'>.</span></Link></p>
-                        <nav className='nav-link'>
-                            <Link className='link' to='/' >Home</Link>
-                            <Link className='link' to='/course' >Courses</Link>
-                            <Link className='link' to='/about' >About</Link>
-                            <Link className='link' to='/contact' >Contact</Link>
-                            <Link className='link' to='/dashboard' >Dashboard</Link>
+                        <nav className={navMobile ? 'nav-full' : 'nav-link'}>
+                            <Link onClick={handelNav} className='link' to='/' >Home</Link>
+                            <Link onClick={handelNav} className='link' to='/course' >Courses</Link>
+                            <Link onClick={handelNav} className='link' to='/about' >About</Link>
+                            <Link onClick={handelNav} className='link' to='/contact' >Contact</Link>
+                            <Link onClick={handelNav} className='link' to='/dashboard' >Dashboard</Link>
                         </nav>
+                        <div className="hamburger">
+                            {navMobile ? <i onClick={handelNav} class="fa-sharp fa-solid fa-xmark icon-cross"></i> : <i onClick={handelNav} class="fa-sharp fa-solid fa-bars-staggered icon"></i>}
+                        </div>
                     </div>
                 </div>
             </div>

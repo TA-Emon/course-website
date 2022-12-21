@@ -1,65 +1,177 @@
-.top-info{
-    
-}
-.top-bar{
-    height: 40px;
+.top-info {}
+
+.top-bar {
+    height: 4rem;
     background-color: var(--primaryColor);
 }
+
 .info-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 40px;
+    height: 4rem;
 }
+
 .left-info i {
     color: white;
     font-size: 1.8rem;
     margin-right: 2rem;
     cursor: pointer;
 }
-.right-info{
+
+.right-info {
     display: flex;
-    
+
 }
+
 .right-info p {
     margin-left: 2rem;
     font-size: 1.6rem;
     color: white;
 }
 
-.header{
-    height: 80px;
+.header {
+    height: 8rem;
     background-color: rgb(243 243 243 / 83%);
 }
+
 .container {
     width: 120rem;
     margin: auto;
 }
-.header-items{
-    height: 80px;
+
+.header-items {
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo{
+
+.logo {
     font-size: 5rem;
     font-weight: 600;
     cursor: pointer;
 }
-.logo-link{
+
+.logo-link {
     text-decoration: none;
-    color: black;;
+    color: black;
+    ;
 }
-.dot{
+
+.dot {
     color: var(--primaryColor);
     font-size: 5rem;
 }
+
 .nav-link {
     font-size: 1.8rem;
     font-weight: 500;
 }
-.link  {
+.nav-full {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.link {
     margin-left: 2rem;
     text-decoration: none;
     color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.icon {
+    color: black;
+    font-size: 2.5rem;
+}
+
+.icon-cross {
+    color: black;
+    font-size: 3.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 95%;
+    }
+
+    .top-bar {
+        height: 5rem;
+        background-color: var(--primaryColor);
+    }
+
+    .info-wrapper {
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        padding: .5rem 0rem;
+        flex-direction: column;
+    }
+
+    /*========= responsive nav bar ========*/
+    .hamburger {
+        display: block;
+    }
+
+    .nav-link {
+        position: absolute;
+        background-color: rgb(99, 99, 99);
+        height: 35rem;
+        top: 12.9rem;
+        left: 0rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        z-index: 999;
+        opacity: 0;
+    }
+
+    .nav-full{
+        position: absolute;
+        background-color: rgb(99, 99, 99);
+        height: 35rem;
+        top: 12.9rem;
+        left: 0rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        z-index: 999;
+        opacity: 1;
+    }
+    .link {
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        color: aliceblue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .right-info {
+        display: none;
+    }
+
+    .left-info {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .left-info i{
+        font-size: 3rem;
+            margin-right: 0rem;
+            margin: 0 1.5rem;
+    }
 }

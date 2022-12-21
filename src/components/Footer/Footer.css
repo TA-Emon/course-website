@@ -1,42 +1,51 @@
-.footer{
+.footer {
     background-color: #000000d9;
     padding: 10rem 0rem;
 }
+
 .footer-wrapper {
     display: flex;
 
 }
+
 .footer-container {
     height: 100%;
 }
-.email{
+
+.email {
     flex: 3;
 }
-.about{
+
+.about {
     flex: 2;
 }
-.footer-info{
+
+.footer-info {
     flex: 1;
 }
-.email h2{
+
+.email h2 {
     font-size: 3rem;
     color: white;
 }
-.email input{
+
+.email input {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--primaryColor);
-    width: 35rem;
+    width: 90%;
     padding: 2rem;
     margin-top: 5rem;
     color: white;
     font-size: 1.8rem;
 }
-.sub-btn{
+
+.sub-btn {
     border: none;
     background-color: transparent;
     padding: 2rem 3rem;
-    margin-left: 5rem;
+    margin-left: 0rem;
+    margin-top: 4rem;
     color: white;
     cursor: pointer;
     border: 1px solid var(--primaryColor);
@@ -44,44 +53,100 @@
     transition: .1s;
 }
 
-.sub-btn:hover{
+.sub-btn:hover {
     background-color: var(--primaryColor);
 }
 
-.social-link i{
+.social-link i {
     color: white;
     font-size: 3rem;
     margin-right: 2rem;
     cursor: pointer;
     margin-top: 10rem;
 }
-.map{
+
+.map {
 
     font-size: 3rem;
     color: white;
     margin-bottom: 2rem;
 }
-.site-map{
+
+.site-map {
     display: flex;
     flex-direction: column;
 }
-.footer-link{
+
+.footer-link {
     font-size: 1.8rem;
     color: white;
     text-decoration: none;
     margin-bottom: 1.5rem;
     transition: .3s;
 }
-.footer-link:hover{
+
+.footer-link:hover {
     color: var(--primaryColor)
 }
-.about h2{
+
+.about h2 {
     font-size: 3rem;
     color: white;
     margin-bottom: 2rem;
 }
+
 .about p {
     color: white;
     font-size: 1.8rem;
     line-height: 3.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    button.sub-btn {
+        margin-top: 2rem;
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .social-link i {
+        margin-top: 3rem;
+    }
+    .email {
+        flex: 4;
+    }
+    
+    .about {
+        flex: 3;
+    }
+    
+    .footer-info {
+        flex: 2;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .email{
+        text-align: center;
+    }
+    .footer-info {
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .footer {
+        background-color: #000000d9;
+        padding: 8rem 0rem;
+    }
+    .social-link i {
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
 }

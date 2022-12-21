@@ -1,4 +1,4 @@
-.home{
+.home {
     height: 88vh;
     background-image: url('../.././img/bg.jpg');
     background-position: fixed;
@@ -10,27 +10,32 @@
 .home-wrapper {
     height: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
-.home-left{
+
+.home-left {
     flex: 2;
 }
-.home-right{
+
+.home-right {
     flex: 1;
 }
+
 .lets-started {
     font-size: 7rem;
     font-weight: 600;
     margin-bottom: 2rem;
     color: white
 }
+
 .learning-skill {
     font-size: 4.5rem;
     font-weight: 300;
     color: white;
     margin-bottom: 5rem;
 }
-.home-btn{
+
+.home-btn {
     text-decoration: none;
     font-size: 1.8rem;
     border: 2px solid var(--primaryColor);
@@ -40,6 +45,30 @@
     transition: .1s;
     margin-top: 4rem;
 }
-.home-btn:hover{
+
+.home-btn:hover {
     background-color: var(--primaryColor);
+}
+
+.home-course-wrapper {
+    margin: 8rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .home-left {
+        flex: 1;
+    }
+
+    .home-right {
+        flex: 0;
+    }
+
+    .lets-started {
+        font-size: 5rem;
+    }
+
+    .learning-skill {
+        font-size: 3.5rem;
+
+    }
 }
